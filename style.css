@@ -1,0 +1,422 @@
+/*
+Theme Name: Marie Curtis
+Theme URI: http://www.prokellseo.com/
+Description: 
+Author: Prokell SEO
+Author URI: http://www.prokellseo.com/
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+	font-size:100%;
+	font:inherit;
+	padding:0;
+	border:0;
+	margin:0;
+	vertical-align:baseline
+	font-weight: 100;
+}
+
+body{
+	line-height: 2em;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #D79236;
+}
+
+ol,ul{
+	list-style:none
+}
+
+blockquote,q{
+	quotes:none
+}
+
+blockquote:before,blockquote:after,q:before,q:after{
+	content:'';
+	content:none
+}
+
+img { 
+	display: block; 
+}
+
+table{
+	border-collapse:collapse;
+	border-spacing:0
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	display:block
+}
+
+p {
+	margin: 0 0 15px
+}
+
+
+/* =Structure
+----------------------------------------------- */
+#page {
+	width: 100%;
+	background: #fff;
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.entry-content {
+	color: #000;
+	width: 65%;
+	float: left;
+}
+
+.entry-title {
+	margin: 20px 0px;
+	font-size: 28px;
+	color: #D79236;
+	border-bottom: 4px solid #D79236;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 22px;
+	line-height: 1.5em;
+	color: #D79236;
+}
+
+p {
+	margin: 0 0 15px;
+}
+
+strong {
+	font-weight: 900;
+}
+
+em {
+	font-style: italic;
+}
+
+/* =Header
+----------------------------------------------- */
+.header {
+	background: #FFECD5;
+}
+
+#logo {
+	width: 300px;
+	height: auto;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.navigation {
+	background: #7F766A;
+}
+
+/* =Homepage
+----------------------------------------------- */
+#hp-feature {
+	background: url(http://maxtestdomain.com/marie-curtis/wp-content/themes/marie-curtis/images/m-curtis-feature-image.jpg) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 150px 0 200px;
+}
+
+.hp-headline {
+	padding: 40px;
+	border: 4px double #fff;
+	background: rgb(184,140,76);
+	background: rgba(184,140,76,.8);
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.hp-headline h1 {
+	color: #fff;
+	font-size: 50px;
+}
+
+.hp-headline p {
+	font-style: italic;
+	color: #fff;
+	font-size: 20px;
+}
+
+.hp-headline a {
+	background: #fff;
+	padding: 8px 12px;
+	color: #000;
+}
+
+.hp-buckets {
+	background: rgba(0,0,0,.5);
+	padding: 10px 0;
+}
+
+.hp-bucket {
+   	width: 30%;
+	float: left;
+	width: 28.33%;
+	margin: 10px 2.5%;
+	color: #fff;
+	text-align: center;
+}
+
+.hp-bucket h2 {
+	color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	font-weight: 300;
+	font-size: 28px;
+}
+
+.hp-bucket h2 a {
+	color: #fff;
+}
+
+.hp-bucket h2 a:hover {
+	color: #D79236;
+}
+
+
+/* =Interior Design Page
+----------------------------------------------- */
+.html5gallery-container-0 a{
+	display: none;
+}
+
+img.pc8-resize {
+	max-width: 130% !important;
+}
+
+/* =Inventory Page
+----------------------------------------------- */
+
+.inv-bucket {
+	background: #b78b51;
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.inv-bucket:last-child {
+	margin-bottom: 0px !important;
+}
+
+.inv-header h1{
+	padding: 10px 0;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	font-weight: 300;
+	font-size: 20px;
+	border-bottom: 1px solid white;
+}
+
+.inv-header p {
+	color: white;
+	font-style: italic;
+	margin-top: 20px;
+}
+
+.inv-cta {
+	background: #7F766A;
+	margin-top: 40px;
+	padding-top: 15px;
+	height: 30px;
+}
+
+.inv-cta a {
+	font-size: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+}
+
+#inv-container {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.media-content-left {
+	height: 200px;
+	float: left;
+}
+
+.media-item {
+	list-style-type: none;
+	min-height: 200px;
+	clear: both;
+	border-bottom: 1px solid #7F766A;
+	padding: 1em 0;
+}
+
+.link {
+  background: #D79236;
+  padding: 8px 12px;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+.media-item br {
+	display: none;
+}
+.inventory-thumb-image {
+  width: 200px;
+  margin-right: 2em;
+  float: left;
+}
+
+.media-item p {
+	margin-bottom: 10px;
+}
+
+.media-item img {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 0 1em 1em 0;
+}
+
+.inventory-main-image-container {
+	width: 60%;
+	float: left;
+	margin-right: 4%;
+}
+
+.inventory-main-image-container img{
+	width: 100%;
+}
+
+.inventory-main-content-container {
+	width: 36%;
+	float: left;
+}
+
+.inventory-main-description-container {
+	margin: 30px 0;
+}
+
+.inventory-main-description-container h2 {
+	color: #8a8175;
+	font-size: 20px;
+	border-bottom: 2px solid #8a8175;
+	margin-bottom: 10px;
+}
+
+/* =Sidebar
+----------------------------------------------- */
+#sidebar {
+	width: 30%;
+	float: right;
+}
+
+.widget-title {
+	margin: 20px 0px;
+	font-size: 28px;
+	color: #D79236;
+	border-bottom: 4px solid #D79236;
+}
+
+.gform_wrapper .top_label .gfield_label {
+	margin: 0 !important;
+	line-height: 1.1em !important;
+}
+
+body .gform_wrapper label.gfield_label + div.ginput_container {
+	margin: 0 0 20px!important;
+}
+
+.gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium {
+	width: 100% !important;
+}
+
+
+/* =Contact Page
+----------------------------------------------- */
+.find {
+	margin: 20px 0;
+	width: 100%;
+}
+
+.find h2 {
+	margin: 20px 0 10px;
+	border-bottom: 4px solid #D79236
+}
+
+.find .map {
+	width: 35%;
+	float: left;
+}
+
+.find .txt {
+	width: 60%;
+	float: right;
+}
+
+.find .txt img {
+	width: 240px;
+	margin: 20px 0 0;
+}
+
+/* =Footer
+----------------------------------------------- */
+#footer {
+	clear: both;
+	padding: 10px 0;
+	width: 100%;
+	margin: 0;
+	background: #2e2e2e;
+}
+
+
+#footer a {
+	color: #fff;
+	margin: 0px 20px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#footer a:hover {
+	color: #D79236;
+}
+
+
+/* =Print stylesheet
+----------------------------------------------- */
+
+.print-info {
+	display: none;
+}
+
+@media print {
+
+	.widget-area, .navigation, .link, #footer {
+		display: none;
+	}
+	.entry-content {
+		width: 100%;
+		float: none;
+	}
+	.print-info {
+		display: block;
+	}
+	.print-info h3 {
+		font-size: 20px;
+		border-bottom: 2px solid #D79236;
+	}
+
+
+}
+
+
+
