@@ -16,6 +16,9 @@
 </div>
 <?php wp_footer(); ?>
 <script  type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+<!-- Include the Sidr JS -->
+<script  type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/sidr/jquery.sidr.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
+
 </body>
 </html>

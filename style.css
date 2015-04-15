@@ -107,12 +107,23 @@ em {
 .header {
 	background: #FFECD5;
 }
+#header-top {
+	text-align: center;
+}
 
 #logo {
 	width: 300px;
 	height: auto;
 	margin: 0 auto;
 	padding: 10px;
+}
+.logo-link {
+	display: inline-block;
+}
+@media (max-width:48em) {
+	#logo {
+		margin: 0;
+	}
 }
 
 .navigation {
@@ -123,6 +134,17 @@ em {
 	background: #7F766A;
 	height: 43px;
 }
+
+/* Navbar */
+
+.menu-item {
+	display: inline-block;
+	color: #fff;
+	margin: 0 1em;
+}
+
+
+
 
 /* =Homepage
 ----------------------------------------------- */
@@ -254,7 +276,6 @@ img.pc8-resize {
 }
 
 .media-content-left {
-	height: 200px;
 	float: left;
 }
 
@@ -264,6 +285,8 @@ img.pc8-resize {
 	clear: both;
 	border-bottom: 1px solid #7F766A;
 	padding: 1em 0;
+	display: inline-block;
+	width: 100%;
 }
 
 .link {
@@ -300,7 +323,6 @@ img.pc8-resize {
 }
 
 .inventory-main-image-container img{
-	width: 100%;
 	display: inline-block;
 }
 .sub-image-container {

@@ -7,26 +7,23 @@
 
 <div class="entry-content">
 	<h1 class="entry-title"><?php the_title(); ?></h1>
-<!-- 	<div class="inventory-main-image-container">
-		
-	 <img src="<?php the_field( 'image' ) ?>" /> 
-	</div> -->
-<!-- <img src="<?php the_field( 'second_image' ) ?>" /> 
-<img src="<?php the_field( 'third_image' ) ?>" />  
- -->
-<div class="inventory-main-image-container">
-	<img src="<?php the_field( 'image' ) ?>" /> 
-	<img src="<?php the_field( 'second_image' ) ?>" />  
-	<img src="<?php the_field( 'third_image' ) ?>" /> 
-</div>
+<?php if( get_field('second_image') ) { ?>
+	<div class="inventory-main-image-container">
+		<img src="<?php the_field( 'image' ) ?>" /> 
+		<img src="<?php the_field( 'second_image' ) ?>" />  
+		<img src="<?php the_field( 'third_image' ) ?>" /> 
+	</div>
 
-<div class="sub-image-container">
-	<div class='sub-slide'><img src="<?php the_field( 'image' ) ?>" /> </div>
-	<div class='sub-slide'><img src="<?php the_field( 'second_image' ) ?>" /> </div>
-	<div class='sub-slide'><img src="<?php the_field( 'third_image' ) ?>" /> </div>
-</div>
-
-
+	<div class="sub-image-container">
+		<div class='sub-slide'><img src="<?php the_field( 'image' ) ?>" /> </div>
+		<div class='sub-slide'><img src="<?php the_field( 'second_image' ) ?>" /> </div>
+		<div class='sub-slide'><img src="<?php the_field( 'third_image' ) ?>" /> </div>
+	</div>
+<?php } else { ?>
+	<div class="inventory-main-image-container">
+		 <img src="<?php the_field( 'image' ) ?>" /> 
+	</div>
+<?php } ?>
 	<p><strong>Inventory Number:</strong> <?php the_field( 'inventory_number' ) ?></p>
 	<p><strong>Overall Size:</strong> <?php the_field( 'overall-size' ) ?></p>
 	<p><strong>Frame Opening:</strong>	<?php the_field( 'frame_opening' ) ?></p>
