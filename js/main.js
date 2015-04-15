@@ -4,17 +4,17 @@ $(document).ready(function(){
 
 
   //slick on sub pages
-   $('.main-sub-video').slick({
+   $('.inventory-main-image-container').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.sub-video-container'
+    asNavFor: '.sub-image-container'
   });
-  $('.sub-video-container').slick({
+  $('.sub-image-container').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    asNavFor: '.main-sub-video',
+    asNavFor: '.inventory-main-image-container',
     arrows: true,
     focusOnSelect: true
   });

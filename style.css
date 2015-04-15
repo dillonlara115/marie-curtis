@@ -119,6 +119,11 @@ em {
 	background: #7F766A;
 }
 
+#header-bottom {
+	background: #7F766A;
+	height: 43px;
+}
+
 /* =Homepage
 ----------------------------------------------- */
 #hp-feature {
@@ -296,8 +301,23 @@ img.pc8-resize {
 
 .inventory-main-image-container img{
 	width: 100%;
+	display: inline-block;
+}
+.sub-image-container {
+	display: block;
+	float: left;
+}
+.sub-image-container img {
+	display: inline-block;
+	max-width: 120px;
 }
 
+.sub-slide {
+	display: inline-block;
+	height: 90px;
+	margin: 0 .5em;
+	overflow: hidden;
+}
 .inventory-main-content-container {
 	width: 36%;
 	float: left;
@@ -305,6 +325,7 @@ img.pc8-resize {
 
 .inventory-main-description-container {
 	margin: 30px 0;
+	clear: both;
 }
 
 .inventory-main-description-container h2 {
