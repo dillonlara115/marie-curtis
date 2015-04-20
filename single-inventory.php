@@ -7,14 +7,14 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	<?php if( get_field('second_image') ) { ?>
 		<div class="inventory-main-image-container">
-			<div><a href="<?php the_field( 'image' ) ?>" data-lightbox="image-1"><img src="<?php the_field( 'image' ) ?>" /></a> </div>
-			<div><a href="<?php the_field( 'second_image' ) ?>" data-lightbox="image-2"><img src="<?php the_field( 'second_image' ) ?>" /></a>    </div>
-			<div><a href="<?php the_field( 'third_image' ) ?>" data-lightbox="image-3"><img src="<?php the_field( 'third_image' ) ?>" /> </a>  </div>
-			<div><a href="<?php the_field( 'fourth_image' ) ?>" data-lightbox="image-4"><img src="<?php the_field( 'fourth_image' ) ?>" />  </a> </div>
+			<div><a href="<?php the_field( 'image' ) ?>" data-lightbox="group" class="first-image"><img src="<?php the_field( 'image' ) ?>" /></a> </div>
+			<div><a href="<?php the_field( 'second_image' ) ?>" data-lightbox="group"><img src="<?php the_field( 'second_image' ) ?>" /></a>    </div>
+			<div><a href="<?php the_field( 'third_image' ) ?>" data-lightbox="group"><img src="<?php the_field( 'third_image' ) ?>" /> </a>  </div>
+			<div><a href="<?php the_field( 'fourth_image' ) ?>" data-lightbox="group"><img src="<?php the_field( 'fourth_image' ) ?>" />  </a> </div>
 		</div>
 	<?php } else { ?>
 		<div class="inventory-main-image-container">
-			<div><a href="<?php the_field( 'image' ) ?>" data-lightbox="image-1"><img src="<?php the_field( 'image' ) ?>" /></a> </div>
+			<div><a href="<?php the_field( 'image' ) ?>" data-lightbox="group"><img src="<?php the_field( 'image' ) ?>" /></a> </div>
 		</div>
 	<?php } ?>
 	<div class="inventory-main-content-container">

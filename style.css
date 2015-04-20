@@ -530,11 +530,14 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 	}
 	.inventory-main-image-container {
 		float: left;
-	}
-	.inventory-main-image-container img {
+		overflow: hidden;
 		width: 300px;
 	}
 
+	.inventory-main-image-container img{
+		width: 300px;
+		display: block!important;
+	}
 
 
 }
