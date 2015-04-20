@@ -2,7 +2,10 @@
   position: absolute;
   right: .2em;
   font-size: 90px;
-  margin-top: .5em; }
+  margin-top: 0.2em;
+  height: 50px;
+  overflow: hidden;
+}
 
 @media (min-width: 48em) {
   #simple-menu {

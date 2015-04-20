@@ -4,6 +4,8 @@
 <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <title><?php wp_title(' | ', true, 'right'); ?></title>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/slick.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/lightbox.css">
 
  <!-- Include Sidr bundled CSS theme -->
  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/sidr/jquery.sidr.dark.css">
@@ -40,7 +42,7 @@
 					<a href='http://www.maxtestdomain.com/marie-curtis/' class="logo-link"><img id='logo' src='http://www.maxtestdomain.com/marie-curtis/wp-content/uploads/2015/01/mcurtis-logo.png'></a>
 					<a id="simple-menu" href="#sidr">&#8801;</a>	
 				</div>
-
+			<?php wp_nav_menu( array('container_id' => 'sidr') ); ?>
 		</div>
 
 	</div>
@@ -50,9 +52,7 @@
 
 			<div style="clear: both;"></div>	
 			
-				<?php wp_nav_menu( array('container_id' => 'sidr') ); ?>
 
-			</nav>
 <!-- 			<div id='cssmenu'>
 			<ul>
 				<li><a href='http://www.maxtestdomain.com/marie-curtis/'><span>Home</span></a></li>
