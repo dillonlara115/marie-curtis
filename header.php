@@ -1,7 +1,13 @@
 <!DOCTYPE html>
+<?php if( is_front_page() ) { ?>
+<html <?php language_attributes(); ?> class="home-html">
+<?php } else { ?> 
 <html <?php language_attributes(); ?>>
+
+<?php } ?>
 <head>
 <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php wp_title(' | ', true, 'right'); ?></title>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/slick.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/slick-theme.css">
@@ -51,22 +57,6 @@
             <?php wp_nav_menu( array('container_id' => 'desktop-nav')); ?>
 
 			<div style="clear: both;"></div>	
-			
-
-<!-- 			<div id='cssmenu'>
-			<ul>
-				<li><a href='http://www.maxtestdomain.com/marie-curtis/'><span>Home</span></a></li>
-				<li class='active has-sub'><a href='http://maxtestdomain.com/marie-curtis/inventory'><span>Inventory</span></a>
-					<ul>
-						<li><a href="http://www.maxtestdomain.com/marie-curtis/frames/">Frames</a></li>
-						<li><a href="http://www.maxtestdomain.com/marie-curtis/trays/">Trays</a></li>
-					</ul>
-					
-				<li><a href='http://www.maxtestdomain.com/marie-curtis/interior-design/'><span>Interior Design</span></a></li>
-				<li><a href='http://www.maxtestdomain.com/marie-curtis/about-m-curtis/'><span>About M. Curtis</span></a></li>
-				<li class='last'><a href='http://www.maxtestdomain.com/marie-curtis/contact-us/'><span>Contact</span></a></li>
-			</ul>
-			</div> -->
 		</div>
 	</div>
 	<div style='clear: both'></div>

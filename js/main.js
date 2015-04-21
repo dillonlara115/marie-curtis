@@ -42,8 +42,6 @@ $(document).ready(function(){
 })(jQuery,'smartresize');
 
 
-
-
 $("#simple-menu").sidr({
     side: "right"
 })

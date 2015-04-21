@@ -61,7 +61,8 @@ p {
 ----------------------------------------------- */
 #page {
 	width: 100%;
-	background: #fff;
+/*	background: #fff;
+*/	position: relative;
 }
 
 .container {
@@ -175,7 +176,6 @@ em {
 .menu-item {
 	display: inline-block;
 	color: #fff;
-	margin: 0 1em;
 }
 
 
@@ -183,15 +183,24 @@ em {
 
 /* =Homepage
 ----------------------------------------------- */
-#hp-feature {
+/*#hp-feature {
 	background: url(http://maxtestdomain.com/marie-curtis/wp-content/themes/marie-curtis/images/m-curtis-feature-image.jpg) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	padding: 150px 0 200px;
+}*/
+.home-html {
+	background: url(http://maxtestdomain.com/marie-curtis/wp-content/themes/marie-curtis/images/m-curtis-feature-image.jpg) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100%;
+	width: 100%;
+	margin-top: 0;
 }
-
 .hp-headline {
 	padding: 40px;
 	border: 4px double #fff;
@@ -309,11 +318,35 @@ img.pc8-resize {
     max-width: 1000px;
     margin: 0 auto;
 }
+.inventory-thumb-content {
+  display: inline-block;
+  float: left;
+  width: 60%;
+}
 
 .media-content-left {
 	float: left;
+	width: 35%;
 }
 
+@media (max-width: 60em) {
+
+	.inventory-thumb-image {
+		width: auto!important;
+	}
+}
+
+@media (max-width: 32em) {
+	.media-content-left, .inventory-thumb-content {
+		width: 100%;
+	}
+	.inventory-thumb-image {
+		width: auto!important;
+	}
+}
+.lb-number {
+	display: none!important;
+}
 .media-item {
 	list-style-type: none;
 	min-height: 200px;
@@ -324,11 +357,19 @@ img.pc8-resize {
 	width: 100%;
 }
 
-.link {
+.link, .gform_button.button {
+	cursor: pointer;
   background: #D79236;
   padding: 8px 12px;
   color: #fff;
   border: 1px solid #666;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.link:hover, .gform_button.button:hover {
+	background: #fff;
+	color: #d79236;
 }
 
 .media-item br {
@@ -341,9 +382,13 @@ img.pc8-resize {
 }
 
 .media-item p {
-	margin-bottom: 10px;
+	margin-bottom: -5px;
 }
-
+.inventory-link {
+	margin-top: 1em;
+	display: inline-block;
+	padding: 0 10px;
+}
 .media-item img {
   width: 100%;
   height: auto;
@@ -379,9 +424,13 @@ img.pc8-resize {
 .inventory-main-content-container {
 	width: 36%;
 	float: left;
-	padding-left: 1em;
+	padding-left: 1.5em;
 }
-
+@media (max-width: 48em) {
+	.inventory-main-content-container {
+		width: 100%;
+	}
+}
 .inventory-main-description-container {
 	margin: 30px 0;
 	clear: both;
@@ -394,9 +443,7 @@ img.pc8-resize {
 	margin-bottom: 10px;
 }
 
-.slick-slider {
-	margin-bottom: 0;
-}
+
 
 .slick-prev {
 	left: 0;
@@ -490,7 +537,10 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 	background: #2e2e2e;
 }
 
-
+.home-footer {
+	position: absolute;
+	bottom: 0;
+}
 #footer a {
 	color: #fff;
 	margin: 0px 20px;
@@ -501,6 +551,14 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 	color: #D79236;
 }
 
+.container-footer span {
+	color: #fff;
+	font-size: 12px;
+}
+
+#footer .container-footer span a {
+	margin: 0;
+}
 
 /* =Print stylesheet
 ----------------------------------------------- */
@@ -520,18 +578,33 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 	}
 	.print-info {
 		display: block;
+		position: absolute;
+		top: -6.5em;
+		right: 1em;
 	}
 	.print-info h3 {
 		font-size: 20px;
 		border-bottom: 2px solid #D79236;
 	}
-	#header-top {
-		text-align: center;
+	.print-info p {
+		margin-bottom: -.5em;
+		padding-bottom: 0;
+	}
+	.slick-slide {
+		display: none;
+	}
+	.slick-slide.slick-active {
+		display: block;
 	}
 	.inventory-main-image-container {
+		width: 45%;
 		float: left;
-		overflow: hidden;
-		width: 300px;
+	}
+
+	.inventory-main-content-container {
+	  width: 50%;
+	  float: left;
+	  padding-left: 1.5em;
 	}
 
 	.inventory-main-image-container img{

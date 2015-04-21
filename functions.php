@@ -41,6 +41,9 @@ register_nav_menus(
 array( 'main-menu' => __( 'Main Menu', 'blankslate' ))
 );
 }
+
+
+
 add_action( 'init', 'blankslate_register_menus' );
 function blankslate_theme_widgets_init() {
 register_sidebar( array (

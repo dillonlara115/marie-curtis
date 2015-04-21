@@ -9,8 +9,12 @@
 		<div class="inventory-main-image-container">
 			<div><a href="<?php the_field( 'image' ) ?>" data-lightbox="group" class="first-image"><img src="<?php the_field( 'image' ) ?>" /></a> </div>
 			<div><a href="<?php the_field( 'second_image' ) ?>" data-lightbox="group"><img src="<?php the_field( 'second_image' ) ?>" /></a>    </div>
+			<?php if( get_field('third_image') ) { ?>
 			<div><a href="<?php the_field( 'third_image' ) ?>" data-lightbox="group"><img src="<?php the_field( 'third_image' ) ?>" /> </a>  </div>
-			<div><a href="<?php the_field( 'fourth_image' ) ?>" data-lightbox="group"><img src="<?php the_field( 'fourth_image' ) ?>" />  </a> </div>
+			<?php } ?>
+			<?php if( get_field('fourth_image') ) { ?>
+			<div><a href="<?php the_field( 'fourth_image' ) ?>" data-lightbox="group"><img src="<?php the_field( 'fourth_image' ) ?>" /> </a>  </div>
+			<?php } ?>
 		</div>
 	<?php } else { ?>
 		<div class="inventory-main-image-container">
@@ -21,9 +25,8 @@
 		<p><strong>Inventory Number:</strong> <?php the_field( 'inventory_number' ) ?></p>
 		<p><strong>Overall Size:</strong> <?php the_field( 'overall_size' ) ?></p>
 		<p><strong>Frame Opening:</strong>	<?php the_field( 'frame_opening' ) ?></p>
-
-		<p><strong>Price:</strong>	$<?php the_field( 'price' ) ?></p>
 		<p><strong>Status:</strong>	<?php the_field( 'status' ) ?></p>
+		<p><strong>Price:</strong>	$<?php the_field( 'price' ) ?></p>
 	</div>
 
 		<div class="inventory-main-description-container">
