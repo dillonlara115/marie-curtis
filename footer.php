@@ -13,10 +13,11 @@
 <a href="http://maxtestdomain.com/marie-curtis/inventory/">Inventory</a>
 <a href="http://maxtestdomain.com/marie-curtis/interior-design/">Interior Design</a>
 <a href="http://maxtestdomain.com/marie-curtis/contact/">Contact</a>
-<br>
-<span>&#169; <?php echo date('Y'); ?> Marie Curtis. All Rights Reserved. Website Designed by <a href="http://ventamarketing.com/" rel="designer">Venta Marketing</a></span>
 
+<br>
 </div>
+
+<span>&#169; <?php echo date('Y'); ?> Marie Curtis. All Rights Reserved. Website Designed by <a href="http://ventamarketing.com/" rel="designer">Venta Marketing</a></span>
 </div>
 
 

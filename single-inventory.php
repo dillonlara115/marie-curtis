@@ -6,19 +6,24 @@
 	<div class="entry-content">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	<?php if( get_field('second_image') ) { ?>
-		<div class="inventory-main-image-container">
-			<div><a href="<?php the_field( 'image' ) ?>" data-lightbox="group" class="first-image"><img src="<?php the_field( 'image' ) ?>" /></a> </div>
-			<div><a href="<?php the_field( 'second_image' ) ?>" data-lightbox="group"><img src="<?php the_field( 'second_image' ) ?>" /></a>    </div>
-			<?php if( get_field('third_image') ) { ?>
-			<div><a href="<?php the_field( 'third_image' ) ?>" data-lightbox="group"><img src="<?php the_field( 'third_image' ) ?>" /> </a>  </div>
+		<div class="inventory-main-image-container"><?php
+			$image1 = get_field('image');
+			$image2 = get_field('second_image');?>
+			<div><a href="<?php echo $image1['url']; ?>" data-lightbox="group" class="first-image"><img src="<?php echo $image1['url']; ?>" /></a> </div>
+			<div><a href="<?php echo $image2['url']; ?>" data-lightbox="group"><img src="<?php echo $image2['url']; ?>" /></a>    </div>
+			<?php if( get_field('third_image') ) { 
+			$image3 = get_field('third_image');?>
+			<div><a href="<?php echo $image3['url']; ?>"  data-lightbox="group"><img src="<?php echo $image3['url']; ?>" /> </a>  </div>
 			<?php } ?>
-			<?php if( get_field('fourth_image') ) { ?>
-			<div><a href="<?php the_field( 'fourth_image' ) ?>" data-lightbox="group"><img src="<?php the_field( 'fourth_image' ) ?>" /> </a>  </div>
+			<?php if( get_field('fourth_image') ) { 
+			$image4 = get_field('fourth_image');?>
+			<div><a href="<?php echo $image4['url']; ?>" data-lightbox="group"><img src="<?php echo $image4['url']; ?>" /> </a>  </div>
 			<?php } ?>
 		</div>
-	<?php } else { ?>
+	<?php } else { 
+		$image1 = get_field('image');?>
 		<div class="inventory-main-image-container">
-			<div><a href="<?php the_field( 'image' ) ?>" data-lightbox="group"><img src="<?php the_field( 'image' ) ?>" /></a> </div>
+			<div><a href="<?php echo $image1['url']; ?>" data-lightbox="group"><img src="<?php echo $image1['url']; ?>" /></a> </div>
 		</div>
 	<?php } ?>
 	<div class="inventory-main-content-container">

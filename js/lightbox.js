@@ -19,7 +19,7 @@
       this.positionFromTop             = 50;
       this.showImageNumberLabel        = true;
       this.alwaysShowNavOnTouchDevices = false;
-      this.wrapAround                  = false;
+      this.wrapAround                  = true;
     }
     
     // Change to localize to non-english language
@@ -49,6 +49,7 @@
     Lightbox.prototype.enable = function() {
       var self = this;
       $('body').on('click', 'a[rel^=lightbox], area[rel^=lightbox], a[data-lightbox], area[data-lightbox]', function(event) {
+            $('.slick-cloned').remove();
         self.start($(event.currentTarget));
         return false;
       });

@@ -323,7 +323,9 @@ img.pc8-resize {
   float: left;
   width: 60%;
 }
-
+.inventory-thumb-content h3 a:hover {
+	color: #7F766A;
+}
 .media-content-left {
 	float: left;
 	width: 35%;
@@ -358,18 +360,20 @@ img.pc8-resize {
 }
 
 .link, .gform_button.button {
+	font-family: 'Josefin Sans', sans-serif;
 	cursor: pointer;
-  background: #D79236;
-  padding: 8px 12px;
-  color: #fff;
-  border: 1px solid #666;
-  -webkit-transition: all 250ms ease;
-  transition: all 250ms ease;
+	background: #D79236;
+	padding: 8px 12px;
+	color: #fff;
+	border: 1px solid #666;
+	-webkit-transition: all 250ms ease;
+	transition: all 250ms ease;
 }
 
 .link:hover, .gform_button.button:hover {
 	background: #fff;
 	color: #d79236;
+	border-color: #D79236;
 }
 
 .media-item br {
@@ -390,10 +394,12 @@ img.pc8-resize {
 	padding: 0 10px;
 }
 .media-item img {
-  width: 100%;
-  height: auto;
-  float: left;
-  padding: 0 1em 1em 0;
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 0 1em 1em 0;
+	cursor: -webkit-zoom-in; 
+	cursor: -moz-zoom-in;
 }
 
 .inventory-main-image-container {
@@ -429,6 +435,7 @@ img.pc8-resize {
 @media (max-width: 48em) {
 	.inventory-main-content-container {
 		width: 100%;
+		padding-left: 0;
 	}
 }
 .inventory-main-description-container {
@@ -551,14 +558,40 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 	color: #D79236;
 }
 
-.container-footer span {
+#footer span {
 	color: #fff;
 	font-size: 12px;
 }
 
-#footer .container-footer span a {
+#footer span a {
 	margin: 0;
 }
+@media (max-width: 48em) {
+	.container-footer {
+		display: none;
+	}
+}
+.slick-slide {
+    text-align: center;
+}
+.slick-track {
+	height: 500px;
+}
+
+.slick-slide::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.slick-slide img {
+    vertical-align: middle;
+    display: inline-block;
+    cursor: -webkit-zoom-in; 
+    cursor: -moz-zoom-in;
+}
+
 
 /* =Print stylesheet
 ----------------------------------------------- */
